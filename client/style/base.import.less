@@ -1,0 +1,39 @@
+html, body
+{
+  height:100%;
+  font-family: 'Lato', sans-serif !important;
+
+}
+
+.layout {
+  min-height: 80%;
+}
+
+button.navbar-toggle {
+  background: inherit;
+}
+
+.navbar {
+   margin-left: 0;
+   border-top: 0 !important;
+   border-left: 0 !important;
+   border-right: 0 !important;
+ }
+
+.navbar-brand {
+   color: #f00 !important;
+   &:hover,
+   &:focus {
+     color: darken(#f00, 10%) !important;
+     background-color: darken(#fff, 10%) !important;
+   }
+}
+
+#iron-router-progress {
+    background-color : darken(@brand-primary,20%);
+    box-shadow       : 0 0 5px darken(@brand-primary,20%);
+}
+
+#iron-router-progress.spinner:before {
+    border-color : darken(@brand-primary,20%);
+}
